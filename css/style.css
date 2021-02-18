@@ -3309,11 +3309,35 @@ span.email-notes {
   color: #07c78e;
   text-align: right;
 }
-.footer-button a:hover{
-    border: 1px solid rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    background: rgb(255, 255, 255);
-	transition: 0.4s;
+.footer-button a:hover {
+  border: 1px solid rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
+  transition: 0.4s;
+}
+.table-heading {
+  background-color: #07c78e;
+  font-weight: bold;
+  color: #fff;
+}
+.table-sub-heading {
+  background-color: #e98410;
+  font-weight: bold;
+  color: #fff;
+}
+td {
+  height: 50px;
+  width: 50px;
+}
+
+#cssTable td {
+  text-align: center;
+  vertical-align: middle;
+}
+.horizontal {
+  -webkit-transform: rotate(-90deg);
+}
+
 /*--------------------------------*/
 /* .End CSS
 /*--------------------------------*/
