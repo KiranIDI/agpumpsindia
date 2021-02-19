@@ -314,15 +314,11 @@
           <div class="col-md-6 col-sm-6 col-xs-12">
             <div class="contact-form">
               <div class="row">
-                <form
-                  id="contactForm"
-                  method="POST"
-                  action="http://rockstheme.com/rocks/tionscal-previews/contact.php"
-                  class="contact-form"
-                >
+                <form role="form" action="assets/contact.php" method="post">
                   <div class="col-md-6 col-sm-6 col-xs-12">
                     <input
                       type="text"
+                      name="name"
                       id="name"
                       class="form-control"
                       placeholder="Name"
@@ -334,6 +330,7 @@
                   <div class="col-md-6 col-sm-6 col-xs-12">
                     <input
                       type="email"
+                      name="email"
                       class="email form-control"
                       id="email"
                       placeholder="Email"
@@ -345,17 +342,31 @@
                   <div class="col-md-12 col-sm-12 col-xs-12">
                     <input
                       type="text"
+                      name="mobile"
+                      id="msg_subject"
+                      class="form-control"
+                      placeholder="Phone Number"
+                      required
+                      data-error="Please enter your Phone Number"
+                    />
+                    <div class="help-block with-errors"></div>
+                  </div>
+                  <div class="col-md-12 col-sm-12 col-xs-12">
+                    <input
+                      type="text"
+                      name="subject"
                       id="msg_subject"
                       class="form-control"
                       placeholder="Subject"
                       required
-                      data-error="Please enter your message subject"
+                      data-error="Please enter your Message Subject"
                     />
                     <div class="help-block with-errors"></div>
                   </div>
                   <div class="col-md-12 col-sm-12 col-xs-12">
                     <textarea
                       id="message"
+                      name="message"
                       rows="7"
                       placeholder="Massage"
                       class="form-control"
@@ -365,9 +376,12 @@
                     <div class="help-block with-errors"></div>
                   </div>
                   <div class="col-md-12 col-sm-12 col-xs-12 text-center">
-                    <button type="submit" id="submit" class="contact-btn">
-                      Submit
-                    </button>
+                    <input
+                      name="submit"
+                      type="submit"
+                      value="Send a Mail"
+                      class="contact-btn"
+                    />
                     <div id="msgSubmit" class="h3 text-center hidden"></div>
                     <div class="clearfix"></div>
                   </div>
